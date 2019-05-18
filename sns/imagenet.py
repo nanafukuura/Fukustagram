@@ -23,4 +23,5 @@ def imagenet(filename):
   results = decode_predictions(preds, top=5)[0]
 
   # 推論結果を出力
+  print(results[0][1])
   return results[0][1]
